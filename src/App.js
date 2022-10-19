@@ -17,4 +17,7 @@ export default App;
 
 const Conteudo = styled("div")`
   text-align: center;
+  display: flex;
+  justify-content: center;
+
 `
