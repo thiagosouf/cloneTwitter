@@ -131,4 +131,12 @@ color: white;
 border-radius: 25px;
 font-weight: 700;
 font-size: 1rem;
+:hover {
+ animation: gradient 3s infinite;
+ transform: scale(1.05);
+}
+:active {
+ animation: gradient 3s infinite;
+ transform: scale(1);
+}
 `

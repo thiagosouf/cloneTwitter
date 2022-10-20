@@ -6,9 +6,9 @@ import Menu from './pages/Menu';
 function App() {
   return (
     <Conteudo>
-      <Menu/>
-      <Main/>
-      <Info/>
+      <Menu />
+      <Main />
+      <Info />
     </Conteudo>
   );
 }
