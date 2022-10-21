@@ -16,21 +16,11 @@ export default function Menu() {
             <ContainerSup>
                 <Logo src="/assets/logo.webp" />
                 <Itens>
-
                     <Item onClick={() => navigate("/")}><HomeOutlinedIcon /><Span>Página Inicial</Span></Item>
-
-
                     <Item onClick={() => navigate("/notificacoes")}><NotificationsOutlinedIcon /><Span>Notificações</Span></Item>
-
-
                     <Item onClick={() => navigate("/")}><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
-
-
                     <Item onClick={() => navigate("/")}><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
-
-
                     <Item onClick={() => navigate("/")}><PersonIcon /><Span>Perfil</Span></Item>
-
                 </Itens>
                 <Botao>
                     Tweetar
@@ -38,7 +28,10 @@ export default function Menu() {
             </ContainerSup>
             <ContainerInf>
                 <Conta>
-                    <Perfil>
+                    <Perfil onClick={() => {
+                        window.location.href = 'https://www.linkedin.com/in/prof-thiago-ferreira/';
+                        return null;
+                    }}>
                         <Foto></Foto>
                         <NomeLogin>
                             <p>Thiago189</p>
