@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Info from './pages/Info';
 import Main from './pages/Main';
 import Menu from './pages/Menu';
@@ -6,9 +8,13 @@ import Menu from './pages/Menu';
 function App() {
   return (
     <Conteudo>
-      <Menu />
-      <Main />
-      <Info />
+      <BrowserRouter>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Info />
+      </BrowserRouter>
     </Conteudo>
   );
 }
