@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useNavigate } from "react-router-dom";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
@@ -7,16 +8,29 @@ import PersonIcon from '@mui/icons-material/Person';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 export default function Menu() {
+    const navigate = useNavigate();
+
+
     return (
         <ContainerMenu>
             <ContainerSup>
                 <Logo src="/assets/logo.webp" />
                 <Itens>
-                    <Item><HomeOutlinedIcon /><Span>Página Inicial</Span></Item>
-                    <Item><NotificationsOutlinedIcon /><Span>Notificações</Span></Item>
-                    <Item><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
-                    <Item><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
-                    <Item><PersonIcon /><Span>Perfil</Span></Item>
+
+                    <Item onClick={() => navigate("/")}><HomeOutlinedIcon /><Span>Página Inicial</Span></Item>
+
+
+                    <Item onClick={() => navigate("/notificacoes")}><NotificationsOutlinedIcon /><Span>Notificações</Span></Item>
+
+
+                    <Item onClick={() => navigate("/")}><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
+
+
+                    <Item onClick={() => navigate("/")}><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
+
+
+                    <Item onClick={() => navigate("/")}><PersonIcon /><Span>Perfil</Span></Item>
+
                 </Itens>
                 <Botao>
                     Tweetar
