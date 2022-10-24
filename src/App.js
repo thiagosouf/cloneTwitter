@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import Menu from './pages/Menu';
 import NotFound from './pages/NotFound'
 import Notificacoes from './pages/Notificacoes';
+import Perfil from './pages/Perfil/Perfil'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Main />} />
           <Route path="/notificacoes" element={<Notificacoes />} />
+          <Route path="/perfil" element={<Perfil />} />
         </Routes>
         <Info />
       </BrowserRouter>

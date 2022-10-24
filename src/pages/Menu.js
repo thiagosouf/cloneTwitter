@@ -20,7 +20,7 @@ export default function Menu() {
                     <Item onClick={() => navigate("/notificacoes")}><NotificationsOutlinedIcon /><Span>Notificações</Span></Item>
                     <Item onClick={() => navigate("/")}><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
                     <Item onClick={() => navigate("/")}><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
-                    <Item onClick={() => navigate("/")}><PersonIcon /><Span>Perfil</Span></Item>
+                    <Item onClick={() => navigate("/perfil")}><PersonIcon /><Span>Perfil</Span></Item>
                 </Itens>
                 <Botao>
                     Tweetar
