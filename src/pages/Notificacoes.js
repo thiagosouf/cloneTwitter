@@ -1,10 +1,9 @@
 import styled from "styled-components"
-import MensagemTexto from "./MensagemTexto"
 
-export default function Main() {
+export default function Notificacoes() {
     return (
         <ContainerMain>
-            <MensagemTexto />
+            Notificacoes
         </ContainerMain>
     )
 }
@@ -16,6 +15,3 @@ const ContainerMain = styled('div')`
     width: 50%;
     color: white;
 `
-
-
-

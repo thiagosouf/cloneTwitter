@@ -1,10 +1,13 @@
 import styled from "styled-components"
-import MensagemTexto from "./MensagemTexto"
+import Voltar from "../Voltar"
+import PerfilUser from "./PerfilUser"
 
-export default function Main() {
+export default function Perfil() {
     return (
         <ContainerMain>
-            <MensagemTexto />
+            <Voltar />
+            <PerfilUser />
+            <Tweets>Tweets</Tweets>
         </ContainerMain>
     )
 }
@@ -18,4 +21,5 @@ const ContainerMain = styled('div')`
 `
 
 
-
+const Tweets = styled('div')`
+`
