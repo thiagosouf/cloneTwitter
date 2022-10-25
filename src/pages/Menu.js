@@ -4,6 +4,7 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import PersonIcon from '@mui/icons-material/Person';
+import Button from '@mui/material/Button';
 
 export default function Menu(){
     return(
@@ -16,9 +17,9 @@ export default function Menu(){
                 <Item><FavoriteBorderOutlinedIcon/><Span>Favoritados</Span></Item>
                 <Item><PersonIcon/><Span>Perfil</Span></Item>
             </Itens>
-            <Botao>
+            <Button variant="contained">
                 Tweetar
-            </Botao>
+            </Button>
         </ContainerMenu>
     )
 }
@@ -58,7 +59,7 @@ const Itens = styled('ul')`
     justify-content: space-between;
 `
 
-const Botao = styled('button')`
+/* const Button = styled('button')`
 height: 3rem;
 background-color: #33A1F2;
 border: none;
@@ -66,4 +67,4 @@ color: white;
 border-radius: 25px;
 font-weight: 700;
 font-size: 1rem;
-`
+` */
