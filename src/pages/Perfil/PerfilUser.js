@@ -10,7 +10,14 @@ export default function PerfilUser() {
         <>
             <UserBackground />
             <FotoBotao>
-                <Foto />
+                <Info>
+                    <Foto />
+                    <p>Nome Sobrenome</p>
+                    <TextoSimples>@nome_de_usuario</TextoSimples>
+                    <TextoSimplesNegrito>Desenvolvido por <Blue>@prof.thiago189</Blue></TextoSimplesNegrito>
+                    <TextoSimples>(icon) Cidade, País</TextoSimples>
+                    <TextoSimples>(icon) Nascido(a) em data de ano</TextoSimples>
+                </Info>
                 <Editar>
                     Editar perfil
                 </Editar>
@@ -32,13 +39,12 @@ const FotoBotao = styled('div')`
 
 const Foto = styled('div')`
     background-color: gray;
-    min-width: 7.5rem;
+    width: 7.5rem;
     height: 7.5rem;
     border: 0.4rem solid black;
     border-radius: 50%;
 
-    position: relative;
-    top: -4.5rem;
+    
     
 `
 
@@ -49,4 +55,32 @@ const Editar = styled('div')`
     padding: 0.7rem;
     margin-top: 0.5rem;
     border-radius: 25px;
+`
+
+const Info = styled('div')`
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: -4.5rem;
+    text-align: left;
+    
+    p{
+        margin: 0;
+    }
+`
+
+const TextoSimples = styled('span')`
+    font-weight:100;
+    margin-bottom: 0.1rem;
+`
+
+const TextoSimplesNegrito = styled('span')`
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+`
+
+const Blue = styled('span')`
+    color: blue;
 `

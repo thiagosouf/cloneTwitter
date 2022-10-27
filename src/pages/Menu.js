@@ -124,7 +124,7 @@ const Span = styled('span')`
 `
 
 const Itens = styled('ul')`
-    height: 35%;
+    height: 45%;
     padding: 0;
     display: flex;
     flex-direction: column;
