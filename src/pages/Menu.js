@@ -18,8 +18,8 @@ export default function Menu() {
                 <Itens>
                     <Item onClick={() => navigate("/")}><HomeOutlinedIcon /><Span>Página Inicial</Span></Item>
                     <Item onClick={() => navigate("/notificacoes")}><NotificationsOutlinedIcon /><Span>Notificações</Span></Item>
-                    <Item onClick={() => navigate("/")}><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
-                    <Item onClick={() => navigate("/")}><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
+                    <Item onClick={() => navigate("/mensagens")}><MailOutlineOutlinedIcon /><Span>Mensagens</Span></Item>
+                    <Item onClick={() => navigate("/favoritos")}><FavoriteBorderOutlinedIcon /><Span>Favoritados</Span></Item>
                     <Item onClick={() => navigate("/perfil")}><PersonIcon /><Span>Perfil</Span></Item>
                 </Itens>
                 <Botao>
